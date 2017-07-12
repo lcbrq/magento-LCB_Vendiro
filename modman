@@ -1,0 +1,3 @@
+shell/vendiro.php
+app/code/local/LCB/Vendiro
+app/etc/modules/LCB_Vendiro.xml

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <LCB_Vendiro>
+            <version>1.0.0</version>
+        </LCB_Vendiro>
+    </modules>
+    <global>
+        <helpers>
+            <vendiro>
+                <class>LCB_Vendiro_Helper</class>
+            </vendiro>
+        </helpers>
+        <models>
+            <vendiro>
+                <class>LCB_Vendiro_Model</class>
+            </vendiro>
+        </models>
+    </global>    
+    <crontab>
+        <jobs>            
+            <vendiro_sendstock>
+                <schedule>
+                    <cron_expr>0 5 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>vendiro/cron::sendStock</model>
+                </run>
+            </vendiro_sendstock>
+        </jobs>
+    </crontab>
+</config> 

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <lcbrq translate="label" module="vendiro">
+            <label>LCBRQ</label>
+            <sort_order>1200</sort_order>
+        </lcbrq>
+    </tabs>
+    <sections>
+        <vendiro translate="label" module="vendiro">                    
+            <label>Vendiro</label>
+            <tab>lcbrq</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>999</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>            
+            <groups>
+                <general translate="label"> 
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                         <enabled>
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled>
+                        <username translate="label">
+                            <label>Username</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Your Vendiro identifier</comment>
+                            <depends>
+                                <enabled>1</enabled>
+                            </depends>
+                        </username>
+                    </fields>
+                </general>
+            </groups>
+        </vendiro>
+    </sections>
+</config>

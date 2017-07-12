@@ -1,2 +1,3 @@
-# magento-LCB_Vendiro
-Vendiro.nl connector for your Magento store
+# LCB_Vendiro
+
+Vendiro.nl stock connector for your Magento store
