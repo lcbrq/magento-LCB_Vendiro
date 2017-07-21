@@ -16,7 +16,7 @@ class Vendiro_Shell extends Mage_Shell_Abstract {
      */
     public function run()
     {
-        Mage::getModel('vendiro/stock')->send(true);
+        Mage::getModel('vendiro/stock', true)->send();
     }
 
 }
